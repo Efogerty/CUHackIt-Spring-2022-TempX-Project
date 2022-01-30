@@ -78,6 +78,9 @@ h2 {
     padding-top: 2rem;
     size: 120%;
 }
+@media screen {
+    
+}
 
 .no-leftright-padding {
     padding-left: 0 !important;
