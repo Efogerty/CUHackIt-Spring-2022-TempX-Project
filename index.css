@@ -10,17 +10,17 @@ html {
 }
 
 .title {
-    height: 20%;
+    height: 10%;
     text-align: center;
     color: #F9E4DC;
 }
 
-h1 {
-    padding-top: 1rem;
+.title img {
+    padding-top: 10px;
 }
 
 .bigpage {
-    height: 80%;
+    height: 90%;
 }
 
 body {
@@ -78,9 +78,27 @@ h2 {
     padding-top: 2rem;
     size: 120%;
 }
-@media screen {
-    
+
+.button {
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 }
+
+.update {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: red;
+}
+
+.update:hover {}
 
 .no-leftright-padding {
     padding-left: 0 !important;
