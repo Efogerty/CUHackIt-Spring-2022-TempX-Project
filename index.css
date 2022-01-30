@@ -1,0 +1,86 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+.title {
+    height: 20%;
+    text-align: center;
+    color: #F9E4DC;
+}
+
+h1 {
+    padding-top: 1rem;
+}
+
+.bigpage {
+    height: 80%;
+}
+
+body {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #454545 !important;
+}
+
+h2 {
+    font-family: 'Prompt', sans-serif;
+    color: #F9E4DC;
+}
+
+.main-content {
+    transform: translate3d(0, 0, 0);
+}
+
+.bigpage {
+    height: 100vh;
+}
+
+.smallspacer {
+    height: 5vh;
+}
+
+.graph {
+    text-align: center;
+}
+
+.graph h2 {
+    margin-top: 2rem;
+}
+
+.temp {
+    margin-top: 5vh;
+    text-align: center;
+    background: radial-gradient(circle closest-side, red, #454545);
+}
+
+.temp h2 {
+    margin-top: 5vh;
+}
+
+.temp h1 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    color: #F9E4DC;
+}
+
+.temp img {
+    size: 120%;
+}
+
+.no-leftright-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
