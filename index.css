@@ -61,20 +61,21 @@ h2 {
 .temp {
     margin-top: 5vh;
     text-align: center;
-    background: radial-gradient(circle closest-side, red, #454545);
+    align-items: center;
 }
 
 .temp h2 {
     margin-top: 5vh;
 }
 
-.temp h1 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    color: #F9E4DC;
+.temp iframe {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .temp img {
+    align-self: center;
+    padding-top: 2rem;
     size: 120%;
 }
 
