@@ -9,6 +9,6 @@
  The data collected by the arduino was then serialized to a raspberry pi (OS DietPi) \
  The raspberry pi would run a python script and then send data (Fahrenheit Temperature) to a cloud server \
  If the raspberry pi found that the temperature surpassed 96 degrees Fahrenheit the user would recieve a text message \
- The cloud server would then send the data to an api called Grafan which would visual the data \
+ The cloud server would then send the data to an api called Grafana which would visual the data \
  We then created a simple website on our own domain \
  This website had embeded graphs\data from Grafana that would update every 5 seconds 
