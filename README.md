@@ -1,14 +1,16 @@
-# TempX CUhackit
+# TempX - CUhackit 2022
+## Keaton Myers, Isaiah Griner, Jenna Hofseth, Evan Fogerty
  This project was done in 15 hours during a Hackathon Event hosted at Clemson. \
- This team won the Best Twilio Implementation Award. 
+ Our team's project won the Best Twilio Implementation Award. 
 # Project Description
- This project was to notify the user if their skin temperature surpassed a threshold \
- We implemented fullstack developement skills and hardware skills to achieve a mobile device that would send pings to your phone
+ Our project consists of an Arduino and Raspberry Pi device connected to temperature sensor nodes that a user would attach to various points on their body in order to track skin temperature. \
+ The Arduino manages the analog readings from the temperature sensors, whereas the Pi manages communication with a TimeScale database and Twilio. If the wearer of the device passes a certain threshold when their skin temperature is measured, the Pi's script will use Twilio in order to send a message to their phone notifying them of this in order to prevent medical emergencies such as skin reactions, strokes, or spiking fevers. \
+ We implemented fullstack development & circuitry techniques to develop a mobile device that communicates with the user's phone and with the TempX website to passively monitor temperature readings.
 # Software and Hardware
- We used an analog temperature sensor connected to a arduino \
- The data collected by the arduino was then serialized to a raspberry pi (OS DietPi) \
- The raspberry pi would run a python script and then send data (Fahrenheit Temperature) to a cloud server \
- If the raspberry pi found that the temperature surpassed 96 degrees Fahrenheit the user would recieve a text message \
- The cloud server would then send the data to an api called Grafana which would visual the data \
- We then created a simple website on our own domain \
- This website had embeded graphs\data from Grafana that would update every 5 seconds 
+ We utilized an analog temperature sensor connected to a Arduino \
+ The data collected by the arduino is then serialized to a Raspberry Pi (OS DietPi) to manage wireless communications \
+ Then, the Pi runs a python script and iteratively sends data (temperature readings, in Fahrenheit) to a Timescale database \
+ If the Raspberry Pi found that the temperature surpassed 96 degrees Fahrenheit (the set threshold), the user recieves a text message notifying them of that and their temperature reading that surpassed the threshold \
+ The cloud server can then send the data to Grafana, which helps to visualize data readings \
+ We then created a simple website on our own domain using Bootstrap, HTML, and CSS. \
+ This website has embeded graphs\data from Grafana that updates every 5 seconds when the user wears the device
