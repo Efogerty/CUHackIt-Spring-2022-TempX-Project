@@ -4,7 +4,7 @@ import datetime
 import meerschaum as mrsm
 
 setpoint = 96
-user_number = "8433194801"
+user_number = ""
 
 ####Texts an alert to the phone of the user if their tempeture is above a setpoint
 def text(sense, value):
@@ -13,8 +13,8 @@ def text(sense, value):
     import datetime
 
     #hide in a future version
-    account_sid = "ACe6afa5701f07612f5acedb2a39552ea3"
-    auth_token = "c7636fe1c209764b22cdac7495a82a7d"
+    account_sid = ""
+    auth_token = ""
 
     cur_time = datetime.datetime.utcnow()
     bucket = mrsm.Pipe("bucket", "last_call", instance="sql:local", columns={'datetime':'utcdatetime'})
